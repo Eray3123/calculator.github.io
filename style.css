@@ -1,0 +1,110 @@
+*{  
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100v;
+    background:white;
+}
+.hesapmakinesi{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+}
+.hesapmakinesi .value{
+    margin-top: 50px;
+    grid-column:span 4 ;
+    height: 50px;
+    width: 226px;
+    margin-right: -20px;
+    border: 1px solid black;
+    text-align:right ;
+    padding: 10px;
+    font-size: 20px;
+}
+.hesapmakinesi span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    background:#2980b9; 
+    place-items: center;
+    border: 1px solid white ;
+    
+}
+.hesapmakinesi span:active{
+    background: white;
+    color: blue;
+}
+.hesapmakinesi span.clear{
+    grid-column:span 2 ;
+    width: 122px;
+    background: black;
+    color: white;
+}
+
+.hesapmakinesi span.bolu{
+    background: burlywood;
+    grid-column: span 1;
+    width: 60px;
+    color: white;
+}
+.hesapmakinesi span.carpi{
+    grid-column: span 1;
+    width: 60px;
+    background: burlywood;
+    color: white;
+}
+.hesapmakinesi span.topla{
+    grid-row: span 2;
+    height: 60px;
+    background: burlywood;
+    color: white;
+    
+}
+.hesapmakinesi span.esittir{
+    background: grey;
+    width: 246px;
+    margin-right: -200px;
+    margin-left: -62px;
+    color: white;
+}
+.hesapmakinesi span.sifir{
+    margin-right:-62px ;
+    margin-left:62px;
+}
+.hesapmakinesi span.yuzde{
+    background: burlywood;
+    margin-right:-186px ;
+    margin-left:186px ;
+    margin-top: -62px;
+    color: white;
+}
+.hesapmakinesi span.cikar{
+    background: burlywood;
+    color: white;
+}
+.hesapmakinesi span.virgul{
+    background: burlywood;
+    margin-top: -62px;
+    color: white;
+}
+.hesapmakinesi span.dirseksol{
+    background: burlywood;
+    color: white;
+}
+.hesapmakinesi span.dirseksag{
+    background: burlywood;
+    margin-left: -62px;
+    color: white;
+}
+.num{
+    cursor:pointer ;
+}

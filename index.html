@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/calculator icon.png">
+
+</head>
+<body>
+    <form class="hesapmakinesi" name="hesap">
+        <input class="value" type="text" name="txt" readonly="">
+        <span class="num clear" onclick="document.hesap.txt.value =''">C</span>
+        <span class="num bolu " onclick="document.hesap.txt.value +='/'">/</span>
+        <span class="num carpi" onclick="document.hesap.txt.value +='*'">*</span>
+        <span class="num" onclick="document.hesap.txt.value +=''">7</span>
+        <span class="num" onclick="document.hesap.txt.value +='8'">8</span>
+        <span class="num" onclick="document.hesap.txt.value +='9'">9</span>
+        <span class="num cikar" onclick="document.hesap.txt.value +='-'">-</span>
+        <span class="num" onclick="document.hesap.txt.value +='4'">4</span>
+        <span class="num" onclick="document.hesap.txt.value +='5'">5</span>
+        <span class="num" onclick="document.hesap.txt.value +='6'">6</span>
+        <span class="num topla" onclick="document.hesap.txt.value +='+'">+</span>
+        <span class="num" onclick="document.hesap.txt.value +='3'">3</span>
+        <span class="num" onclick="document.hesap.txt.value +='2'">2</span>
+        <span class="num" onclick="document.hesap.txt.value +='1'">1</span>
+        <span class="num sifir" onclick="document.hesap.txt.value +='0'">0</span>
+        <span class="num dirseksag" onclick="document.hesap.txt.value +='('">(</span>
+        <span class="num dirseksol" onclick="document.hesap.txt.value +=')'">)</span>
+        <span class="num virgul" onclick="document.hesap.txt.value +=','">,</span>
+        <span class="num yuzde" onclick="document.hesap.txt.value +='%'">%</span>
+        <span class="num esittir" onclick="document.hesap.txt.value =eval(hesap.txt.value)">=</span>
+    </form>
+
+</body>
+</html>
