@@ -12,14 +12,20 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100v;
-    background:white;
 }
-.hesapmakinesi{
+
+.calculator{
     position: relative;
     display: grid;
     margin-top: 20px;
 }
-.hesapmakinesi .value{
+
+
+.num{
+    cursor:pointer ;
+}
+
+.calculator .value{
     margin-top: 50px;
     grid-column:span 4 ;
     height: 50px;
@@ -30,7 +36,8 @@ body {
     padding: 10px;
     font-size: 20px;
 }
-.hesapmakinesi span{
+
+.calculator span{
     display: grid;
     width: 60px;
     height: 60px;
@@ -39,72 +46,80 @@ body {
     border: 1px solid white ;
     
 }
-.hesapmakinesi span:active{
+
+.calculator span:active{
     background: white;
     color: blue;
 }
-.hesapmakinesi span.clear{
+
+.calculator span.clear{
     grid-column:span 2 ;
     width: 122px;
     background: black;
     color: white;
 }
 
-.hesapmakinesi span.bolu{
+.calculator span.division{
     background: burlywood;
     grid-column: span 1;
     width: 60px;
     color: white;
 }
-.hesapmakinesi span.carpi{
+
+.calculator span.multiplication{
     grid-column: span 1;
     width: 60px;
     background: burlywood;
     color: white;
 }
-.hesapmakinesi span.topla{
+
+.calculator span.subtract{
+    background: burlywood;
+    color: white;
+}
+
+.calculator span.add{
     grid-row: span 2;
     height: 60px;
     background: burlywood;
     color: white;
     
 }
-.hesapmakinesi span.esittir{
-    background: grey;
-    width: 246px;
-    margin-right: -200px;
-    margin-left: -62px;
-    color: white;
-}
-.hesapmakinesi span.sifir{
+
+.calculator span.zero{
     margin-right:-62px ;
     margin-left:62px;
 }
-.hesapmakinesi span.yuzde{
+
+.calculator span.bracket-right{
+    background: burlywood;
+    margin-left: -62px;
+    color: white;
+}
+
+.calculator span.bracket-left{
+    background: burlywood;
+    color: white;
+}
+
+.calculator span.comma{
+    background: burlywood;
+    margin-top: -62px;
+    color: white;
+}
+
+.calculator span.percentage{
     background: burlywood;
     margin-right:-186px ;
     margin-left:186px ;
     margin-top: -62px;
     color: white;
 }
-.hesapmakinesi span.cikar{
-    background: burlywood;
-    color: white;
-}
-.hesapmakinesi span.virgul{
-    background: burlywood;
-    margin-top: -62px;
-    color: white;
-}
-.hesapmakinesi span.dirseksol{
-    background: burlywood;
-    color: white;
-}
-.hesapmakinesi span.dirseksag{
-    background: burlywood;
+
+.calculator span.equal{
+    background: grey;
+    width: 246px;
+    margin-right: -200px;
     margin-left: -62px;
     color: white;
-}
-.num{
-    cursor:pointer ;
 }
